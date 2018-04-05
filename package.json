@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "Fixable no-mixed-operators rule for eslint",
   "main": "src/index.js",
-  "repository": "https://github.com/kevin940726/eslint-plugin-no-mixed-operators",
+  "files": ["src"],
+  "repository":
+    "https://github.com/kevin940726/eslint-plugin-no-mixed-operators",
   "author": "Kai Hao",
   "license": "MIT",
   "devDependencies": {
