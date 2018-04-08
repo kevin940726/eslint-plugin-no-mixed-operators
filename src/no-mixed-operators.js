@@ -8,7 +8,6 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-
 const astUtils = require('./astUtils');
 
 //------------------------------------------------------------------------------
@@ -183,10 +182,11 @@ module.exports = {
         message,
         data,
         fix: function(fixer) {
-          return [
-            fixer.insertTextBefore(node, '('),
-            fixer.insertTextAfter(node, ')')
-          ];
+          // we replace text here to support eslint version < 4
+          const replacedText =
+            '(' + sourceCode.text.slice(node.range[0], node.range[1]) + ')';
+
+          return fixer.replaceTextRange(node.range, replacedText);
         }
       });
       context.report({
