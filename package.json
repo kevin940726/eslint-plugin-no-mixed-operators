@@ -1,9 +1,11 @@
 {
   "name": "eslint-plugin-no-mixed-operators",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Fixable no-mixed-operators rule for eslint",
   "main": "src/index.js",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kevin940726/eslint-plugin-no-mixed-operators"
