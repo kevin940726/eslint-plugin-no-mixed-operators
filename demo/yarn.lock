@@ -245,8 +245,8 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-plugin-no-mixed-operators@../:
-  version "1.0.2"
+"eslint-plugin-no-mixed-operators@file:..":
+  version "1.1.0"
 
 eslint@~3.19.0:
   version "3.19.0"

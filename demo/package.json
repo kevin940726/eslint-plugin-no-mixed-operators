@@ -5,9 +5,9 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "~3.19.0",
-    "eslint-plugin-no-mixed-operators": "../"
+    "eslint-plugin-no-mixed-operators": "file:../"
   },
   "scripts": {
-    "test": "eslint ./"
+    "test": "eslint --fix index.js"
   }
 }
